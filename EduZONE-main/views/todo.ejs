@@ -1,0 +1,24 @@
+<%- include("header"); %>
+
+<div class="todo-container" style="text-align: center;">
+    <h2>To-Do List</h2>
+    <div class="todo">
+    <form action="/todo" method="POST" class="todo-header" style="margin-bottom: 15px;">
+    <input type="text" name="content">
+    <button type="submit"><span class="fas fa-plus"></span></button>
+    </form>
+    <ul class="todo-list " >
+        <% TodoTask.forEach(details => { %>
+        <li class="todo-list-item" style="list-style-type:none; border-bottom: 3 px white;">
+        <div class="todo-list-item-name"><%= details.content %></div>
+        <form action="/remove/<%= details._id %>?_method=DELETE" method="POST" class="remove">
+          <button class="fas fa-trash"></button>
+        </form>  
+        </li>
+        <% }) %>
+        </ul>
+    </div>
+</div>
+
+<%- include("footer"); %>
+
