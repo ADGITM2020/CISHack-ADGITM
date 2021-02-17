@@ -1,3 +1,6 @@
+#Note
+This website if fully dynamic not hardcoded so install all the required files correctly. You can watch this [video](https://drive.google.com/file/d/1-dXPcTS3o_JLwvPIKRMx40TlFAqHp8n-/view?usp=sharing) for how this website works.
+
 ## AnyERP
 ANYERP is an online web-based billing and inventory management system which integrates
 the product analysis and the history of the bill generated in a period. It will reduce the human
