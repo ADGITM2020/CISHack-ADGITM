@@ -1,0 +1,2118 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12568
+"GET /static/bill/style.css HTTP/1.1" 200 10621
+"GET /static/css/global_style.css HTTP/1.1" 200 6262
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/bill/images/pigment.jpg HTTP/1.1" 200 35196
+"GET /static/bill/images/dayglo.jpg HTTP/1.1" 200 46853
+"GET /static/bill/images/dye.jpg HTTP/1.1" 200 27572
+"GET /static/bill/images/founder.jpg HTTP/1.1" 200 179740
+"GET /static/js/bootstrap.js HTTP/1.1" 200 131637
+"GET /static/bill/images/pva.jpg HTTP/1.1" 200 31090
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/bill/images/nylon.jpg HTTP/1.1" 200 60179
+"GET /static/bill/images/nyfabric.jpg HTTP/1.1" 200 12797
+"GET /static/bill/images/binder.jpg HTTP/1.1" 200 29430
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/bill/images/sewing.jpg HTTP/1.1" 200 2303435
+"GET /static/bill/images/home_bg.png HTTP/1.1" 200 1280495
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /dashboard/ HTTP/1.1" 200 12286
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/js/dashboard.js HTTP/1.1" 200 8581
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /api/dashboard/ HTTP/1.1" 200 391
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 12286
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /api/dashboard/ HTTP/1.1" 200 394
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /dashboard/ HTTP/1.1" 200 12286
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/dashboard.js HTTP/1.1" 200 8587
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /api/dashboard/ HTTP/1.1" 200 394
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 12286
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /api/dashboard/ HTTP/1.1" 200 410
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 12286
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /dashboard/ HTTP/1.1" 200 12286
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /dashboard/ HTTP/1.1" 500 133568
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /favicon.ico HTTP/1.1" 500 132724
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /dashboard/ HTTP/1.1" 500 133568
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /favicon.ico HTTP/1.1" 500 132724
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /dashboard/ HTTP/1.1" 500 133568
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\debug_toolbar\toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\test\utils.py", line 95, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\defaulttags.py", line 443, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\urls\base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+"GET /favicon.ico HTTP/1.1" 500 132724
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/js/dashboard.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 400
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/js/dashboard.js HTTP/1.1" 200 8611
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    print(orders.values_list('invoice_no', 'grand_total_final',flat=True))
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 817, in values_list
+    raise TypeError("'flat' is not valid when values_list is called with more than one field.")
+TypeError: 'flat' is not valid when values_list is called with more than one field.
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    print(orders.values_list('invoice_no', 'grand_total_final',flat=True))
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 817, in values_list
+    raise TypeError("'flat' is not valid when values_list is called with more than one field.")
+TypeError: 'flat' is not valid when values_list is called with more than one field.
+"GET /api/dashboard/ HTTP/1.1" 500 21100
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/js/dashboard.js HTTP/1.1" 200 8627
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    print(orders.values_list('invoice_no', 'grand_total_final',flat=True))
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 817, in values_list
+    raise TypeError("'flat' is not valid when values_list is called with more than one field.")
+TypeError: 'flat' is not valid when values_list is called with more than one field.
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    print(orders.values_list('invoice_no', 'grand_total_final',flat=True))
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 817, in values_list
+    raise TypeError("'flat' is not valid when values_list is called with more than one field.")
+TypeError: 'flat' is not valid when values_list is called with more than one field.
+"GET /api/dashboard/ HTTP/1.1" 500 21100
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/js/dashboard.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+TypeError: <lambda>() takes 1 positional argument but 2 were given
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+TypeError: <lambda>() takes 1 positional argument but 2 were given
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 500 20913
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 8627
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+TypeError: <lambda>() takes 1 positional argument but 2 were given
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+TypeError: <lambda>() takes 1 positional argument but 2 were given
+"GET /api/dashboard/ HTTP/1.1" 500 20970
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/js/dashboard.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1772, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'dict'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 109, in <lambda>
+    year_sales = map(lambda year: invoices.filter(year=year).aggregate(sum=Sum('grand_total_final')), unique_years)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1354, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1381, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1315, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1169, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\lookups.py", line 22, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\lookups.py", line 72, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1774, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'year' expected a number but got {'year': 2020}.
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1772, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'dict'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 109, in <lambda>
+    year_sales = map(lambda year: invoices.filter(year=year).aggregate(sum=Sum('grand_total_final')), unique_years)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1354, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1381, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1315, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1169, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\lookups.py", line 22, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\lookups.py", line 72, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1774, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'year' expected a number but got {'year': 2020}.
+"GET /api/dashboard/ HTTP/1.1" 500 22817
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/js/dashboard.js HTTP/1.1" 304 0
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1772, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 109, in <lambda>
+    year_sales = map(lambda year: invoices.filter(year=year).aggregate(sum=Sum('grand_total_final')), unique_years)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1354, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1381, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1315, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1169, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\lookups.py", line 22, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\lookups.py", line 72, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1774, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'year' expected a number but got (2020,).
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1772, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\renderers.py", line 100, in render
+    ret = json.dumps(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\bashi\anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\utils\encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 109, in <lambda>
+    year_sales = map(lambda year: invoices.filter(year=year).aggregate(sum=Sum('grand_total_final')), unique_years)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 904, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\query.py", line 923, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1354, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1381, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1315, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\sql\query.py", line 1169, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\lookups.py", line 22, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\lookups.py", line 72, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\db\models\fields\__init__.py", line 1774, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'year' expected a number but got (2020,).
+"GET /api/dashboard/ HTTP/1.1" 500 22804
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/dashboard.js HTTP/1.1" 200 8627
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 318
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 8627
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /api/dashboard/ HTTP/1.1" 200 356
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/dashboard.js HTTP/1.1" 200 8627
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 302
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /dashboard/ HTTP/1.1" 200 21917
+"GET /static/js/dashboard.js HTTP/1.1" 304 0
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 302
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/dashboard.js HTTP/1.1" 200 8627
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /api/dashboard/ HTTP/1.1" 200 302
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 8627
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /api/dashboard/ HTTP/1.1" 200 302
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /__debug__/render_panel/?store_id=f3bb41622de747fb98727a5b3c1edfb3&panel_id=SQLPanel HTTP/1.1" 200 15806
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 7148
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /api/dashboard/ HTTP/1.1" 200 302
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/dashboard.js HTTP/1.1" 200 7148
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /api/dashboard/ HTTP/1.1" 200 302
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET / HTTP/1.1" 200 22177
+"GET /bill/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 21437
+"GET /dashboard/ HTTP/1.1" 302 0
+"GET /accounts/login/?next=/dashboard/ HTTP/1.1" 404 13915
+"GET /favicon.ico HTTP/1.1" 404 13865
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\settings.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 16609
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/css/global_style.css HTTP/1.1" 200 6262
+"GET /static/css/login.css HTTP/1.1" 200 3218
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/js/bootstrap.js HTTP/1.1" 200 131637
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/images/login.jpg HTTP/1.1" 200 97126
+"GET /static/bill/images/home_bg.png HTTP/1.1" 200 1280495
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET / HTTP/1.1" 200 21437
+"GET /dashboard/ HTTP/1.1" 302 0
+"GET /login?next=/dashboard/ HTTP/1.1" 301 0
+"GET /login/?next=/dashboard/ HTTP/1.1" 200 16625
+"GET /bill/ HTTP/1.1" 200 13601
+"GET /static/bill/css/bill_cards.css HTTP/1.1" 200 4161
+"GET /static/images/sara1.jpg HTTP/1.1" 200 97927
+"GET /favicon.ico HTTP/1.1" 404 13865
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py changed, reloading.
+Watching for file changes with StatReloader
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\bill\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /bill/ HTTP/1.1" 302 0
+"GET /login?next=/bill/ HTTP/1.1" 301 0
+"GET /login/?next=/bill/ HTTP/1.1" 200 16621
+"GET /static/css/login.css HTTP/1.1" 200 3218
+"GET /static/css/global_style.css HTTP/1.1" 200 6262
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/bootstrap.js HTTP/1.1" 200 131637
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/images/login.jpg HTTP/1.1" 200 97126
+"GET /static/bill/images/home_bg.png HTTP/1.1" 200 1280495
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /dashboard/ HTTP/1.1" 302 0
+"GET /login/?next=/dashboard/ HTTP/1.1" 200 16625
+"GET / HTTP/1.1" 200 21437
+"GET /bill/invoice/bill/15/ HTTP/1.1" 404 16003
+"GET /favicon.ico HTTP/1.1" 404 13865
+"GET /bill/invoice/bill/32 HTTP/1.1" 404 15999
+"GET /bill/invoice/bill/15/ HTTP/1.1" 404 16003
+"GET /inventory/product/SARAPOL0056/ HTTP/1.1" 200 24435
+"GET /static/inventory/css/detail.css HTTP/1.1" 200 2174
+"GET /api/product/stats/SARAPOL0056 HTTP/1.1" 301 0
+"GET /api/product/stats/SARAPOL0056/ HTTP/1.1" 200 222
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\inventory\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 21437
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 21438
+"GET /static/css/global_style.css HTTP/1.1" 304 0
+"GET /static/bill/style.css HTTP/1.1" 304 0
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /login/ HTTP/1.1" 200 16609
+"GET /static/images/login.jpg HTTP/1.1" 200 97126
+"POST /login/ HTTP/1.1" 302 0
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/js/dashboard.js HTTP/1.1" 200 7148
+"GET /api/dashboard/ HTTP/1.1" 200 302
+"GET /login/ HTTP/1.1" 200 17348
+"GET /static/js/bootstrap.js.map HTTP/1.1" 404 1784
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /login/ HTTP/1.1" 200 17348
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/js/bootstrap.js.map HTTP/1.1" 404 1784
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"POST /login/ HTTP/1.1" 302 0
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /api/dashboard/ HTTP/1.1" 200 302
+"GET /login/ HTTP/1.1" 200 17348
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/js/bootstrap.js.map HTTP/1.1" 404 1784
+"GET /login/ HTTP/1.1" 200 17348
+"GET /static/css/login.css HTTP/1.1" 200 3250
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/global_style.css HTTP/1.1" 200 6262
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/images/login.jpg HTTP/1.1" 200 97126
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/js/bootstrap.js HTTP/1.1" 200 131637
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/bill/images/home_bg.png HTTP/1.1" 200 1280495
+"GET /static/css/bootstrap.css.map HTTP/1.1" 404 1790
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/js/bootstrap.js.map HTTP/1.1" 404 1784
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /login/ HTTP/1.1" 200 17348
+"GET /static/css/login.css HTTP/1.1" 200 3250
+"GET /static/css/global_style.css HTTP/1.1" 200 6262
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/js/bootstrap.js HTTP/1.1" 200 131637
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/images/login.jpg HTTP/1.1" 200 97126
+"GET /static/bill/images/home_bg.png HTTP/1.1" 200 1280495
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"POST /login/ HTTP/1.1" 302 0
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /api/dashboard/ HTTP/1.1" 200 302
+Watching for file changes with StatReloader
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 200 17826
+"GET /static/admin/css/base.css HTTP/1.1" 200 16378
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /favicon.ico HTTP/1.1" 404 13866
+"GET /admin/bill/invoice/ HTTP/1.1" 200 20026
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6190
+"GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+"GET /static/admin/js/core.js HTTP/1.1" 200 5723
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"POST /admin/bill/invoice/ HTTP/1.1" 200 21212
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+"POST /admin/bill/invoice/ HTTP/1.1" 302 0
+"GET /admin/bill/invoice/ HTTP/1.1" 200 12964
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 12900
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoice/ HTTP/1.1" 200 12839
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/product/ HTTP/1.1" 200 39523
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 22179
+"GET /static/bill/style.css HTTP/1.1" 304 0
+"GET /static/css/global_style.css HTTP/1.1" 200 6262
+"GET /static/js/bootstrap.js HTTP/1.1" 200 131637
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/bill/images/home_bg.png HTTP/1.1" 200 1280495
+"GET /bill/ HTTP/1.1" 200 10255
+"GET /static/bill/css/bill_cards.css HTTP/1.1" 200 4161
+"GET /favicon.ico HTTP/1.1" 404 13865
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/js/dashboard.js HTTP/1.1" 304 0
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    invoice_list, price_list = zip(*price_invoice_data)
+ValueError: not enough values to unpack (expected 2, got 0)
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    invoice_list, price_list = zip(*price_invoice_data)
+ValueError: not enough values to unpack (expected 2, got 0)
+"GET /api/dashboard/ HTTP/1.1" 500 20859
+"GET /inventory/ HTTP/1.1" 200 49685
+"GET /static/inventory/style.css HTTP/1.1" 200 2257
+"GET /static/inventory/css/search.css HTTP/1.1" 200 2466
+"GET /static/inventory/js/searchAndFilter.js HTTP/1.1" 200 2086
+"GET /static/images/sara9.jpg HTTP/1.1" 200 258270
+"GET /dashboard/ HTTP/1.1" 200 21916
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    invoice_list, price_list = zip(*price_invoice_data)
+ValueError: not enough values to unpack (expected 2, got 0)
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    invoice_list, price_list = zip(*price_invoice_data)
+ValueError: not enough values to unpack (expected 2, got 0)
+"GET /api/dashboard/ HTTP/1.1" 500 20859
+"GET /bill/ HTTP/1.1" 200 10255
+"GET /dashboard/ HTTP/1.1" 200 21916
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    invoice_list, price_list = zip(*price_invoice_data)
+ValueError: not enough values to unpack (expected 2, got 0)
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    invoice_list, price_list = zip(*price_invoice_data)
+ValueError: not enough values to unpack (expected 2, got 0)
+"GET /api/dashboard/ HTTP/1.1" 500 20859
+"POST /dashboard/ HTTP/1.1" 302 0
+"GET /bill/ HTTP/1.1" 200 10255
+"GET /dashboard/ HTTP/1.1" 200 21916
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    invoice_list, price_list = zip(*price_invoice_data)
+ValueError: not enough values to unpack (expected 2, got 0)
+Internal Server Error: /api/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 105, in get
+    invoice_list, price_list = zip(*price_invoice_data)
+ValueError: not enough values to unpack (expected 2, got 0)
+"GET /api/dashboard/ HTTP/1.1" 500 20859
+"GET / HTTP/1.1" 200 22177
+"GET / HTTP/1.1" 200 22177
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 200 17522
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /admin/bill/invoice/ HTTP/1.1" 200 12839
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/ HTTP/1.1" 200 17522
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 12900
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/ HTTP/1.1" 200 17522
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14214
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoice/33/change/ HTTP/1.1" 200 26147
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20232
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 10322
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET / HTTP/1.1" 200 22177
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /api/dashboard/ HTTP/1.1" 200 152
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 152
+"GET /dashboard/ HTTP/1.1" 200 21916
+"GET /static/js/dashboard.js HTTP/1.1" 200 7150
+"GET /static/js/jquery-3.3.1.js HTTP/1.1" 200 86927
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/images/enter_logo.png HTTP/1.1" 200 4571
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /static/css/bootstrap.css HTTP/1.1" 200 192347
+"GET /static/css/dashboard.css HTTP/1.1" 200 9534
+"GET /static/js/Chart.js HTTP/1.1" 200 156721
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /static/favicon.ico HTTP/1.1" 200 113810
+"GET /api/dashboard/ HTTP/1.1" 200 152
+"GET /inventory/ HTTP/1.1" 200 49685
+"GET /static/inventory/style.css HTTP/1.1" 200 2257
+"GET /static/inventory/css/search.css HTTP/1.1" 200 2466
+"GET /static/inventory/js/searchAndFilter.js HTTP/1.1" 200 2086
+"GET /static/images/sara9.jpg HTTP/1.1" 200 258270
+"GET /bill/ HTTP/1.1" 200 10903
+"GET /static/images/sara1.jpg HTTP/1.1" 200 97927
+"GET /favicon.ico HTTP/1.1" 404 13865
+"GET /inventory/ HTTP/1.1" 200 49685
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14214
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoice/33/change/ HTTP/1.1" 200 26147
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14356
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/41/change/ HTTP/1.1" 200 24893
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14356
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/40/change/ HTTP/1.1" 200 24905
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14356
+E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\bill\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14355
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14354
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6190
+"GET /static/admin/css/base.css HTTP/1.1" 200 16378
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11405
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+"GET /static/admin/js/core.js HTTP/1.1" 200 5723
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+"GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 10268
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 2090
+"GET /favicon.ico HTTP/1.1" 404 13865
+"GET /admin/bill/invoiceproduct/41/change/ HTTP/1.1" 200 24892
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14354
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/41/change/ HTTP/1.1" 200 24891
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14354
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14214
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"POST /admin/bill/invoice/ HTTP/1.1" 200 13428
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 409
+"POST /admin/bill/invoice/ HTTP/1.1" 302 0
+"GET /admin/bill/invoice/ HTTP/1.1" 200 12963
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14354
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/43/change/ HTTP/1.1" 200 24891
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/43/change/ HTTP/1.1" 200 24891
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14354
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/logout/ HTTP/1.1" 200 10848
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 11553
+"GET /static/admin/css/login.css HTTP/1.1" 200 1233
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 17521
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14354
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/ HTTP/1.1" 200 17521
+"GET /admin/bill/product/ HTTP/1.1" 200 39522
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/ HTTP/1.1" 200 17521
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14429
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"POST /admin/bill/invoice/ HTTP/1.1" 200 13562
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14644
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"POST /admin/bill/invoice/ HTTP/1.1" 200 13693
+"POST /admin/bill/invoice/ HTTP/1.1" 302 0
+"GET /admin/bill/invoice/ HTTP/1.1" 200 12963
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /inventory/ HTTP/1.1" 200 49685
+"GET /inventory/product/SARAACE0000/ HTTP/1.1" 200 19512
+"GET /static/inventory/css/detail.css HTTP/1.1" 200 2174
+"GET /api/product/stats/SARAACE0000 HTTP/1.1" 301 0
+Internal Server Error: /api/product/stats/SARAACE0000/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+Internal Server Error: /api/product/stats/SARAACE0000/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+"GET /api/product/stats/SARAACE0000/ HTTP/1.1" 500 20929
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 12901
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/product/ HTTP/1.1" 200 39523
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/product/ HTTP/1.1" 200 39523
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /inventory/product/SARAHIM0021/ HTTP/1.1" 200 19529
+"GET /api/product/stats/SARAHIM0021 HTTP/1.1" 301 0
+Internal Server Error: /api/product/stats/SARAHIM0021/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+Internal Server Error: /api/product/stats/SARAHIM0021/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+"GET /api/product/stats/SARAHIM0021/ HTTP/1.1" 500 20929
+"GET /inventory/product/SARAHIM0020/ HTTP/1.1" 200 19528
+"GET /api/product/stats/SARAHIM0020 HTTP/1.1" 301 0
+Internal Server Error: /api/product/stats/SARAHIM0020/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+Internal Server Error: /api/product/stats/SARAHIM0020/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+"GET /api/product/stats/SARAHIM0020/ HTTP/1.1" 500 20929
+"GET /inventory/product/SARAHIM0019/ HTTP/1.1" 200 19537
+"GET /api/product/stats/SARAHIM0019 HTTP/1.1" 301 0
+Internal Server Error: /api/product/stats/SARAHIM0019/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+Internal Server Error: /api/product/stats/SARAHIM0019/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+"GET /api/product/stats/SARAHIM0019/ HTTP/1.1" 500 20929
+"GET /inventory/product/SARAHIM0021/ HTTP/1.1" 200 19530
+Internal Server Error: /api/product/stats/SARAHIM0021/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+Internal Server Error: /api/product/stats/SARAHIM0021/
+Traceback (most recent call last):
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bashi\anaconda3\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\Users\bashi\Videos\Projects\SaraswatiEnterprises\saraswati_enterprises\views.py", line 262, in get
+    x, y, z = zip(*order_data)
+ValueError: not enough values to unpack (expected 3, got 0)
+"GET /api/product/stats/SARAHIM0021/ HTTP/1.1" 500 20929
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14214
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoice/39/change/ HTTP/1.1" 200 26121
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13835
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 12900
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 12900
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14214
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"POST /admin/bill/invoice/ HTTP/1.1" 200 13147
+"POST /admin/bill/invoice/ HTTP/1.1" 302 0
+"GET /admin/bill/invoice/ HTTP/1.1" 200 12963
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoice/ HTTP/1.1" 200 13998
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"POST /admin/bill/invoice/ HTTP/1.1" 200 13014
+"POST /admin/bill/invoice/ HTTP/1.1" 302 0
+"GET /admin/bill/invoice/ HTTP/1.1" 200 12962
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14214
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/invoice/42/change/ HTTP/1.1" 200 26133
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13844
+"GET /admin/bill/invoiceproduct/ HTTP/1.1" 200 14113
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"GET /admin/bill/ HTTP/1.1" 200 13834
+"GET /admin/bill/invoice/ HTTP/1.1" 200 14214
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187
+"POST /admin/bill/invoice/ HTTP/1.1" 200 13313
+"POST /admin/bill/invoice/ HTTP/1.1" 302 0
+"GET /admin/bill/invoice/ HTTP/1.1" 200 12963
+"GET /admin/jsi18n/ HTTP/1.1" 200 3187

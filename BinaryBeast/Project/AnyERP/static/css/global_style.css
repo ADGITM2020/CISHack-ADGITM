@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/* NAVBAR */
+.bg-black {
+  background-color: black;
+}
+
+.navbar {
+  border-radius: 0;
+  font-weight: 700;
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+.navbar-brand {
+  font-family: Monoton, sans-serif;
+  font-size: 48px !important;
+  font-weight: 300;
+}
+
+
+/* global styling */
+.text-center {
+  text-align: center;
+}
+
+.section-margin-50 {
+  margin: 50px 0;
+}
+
+.section-padding-100 {
+  padding: 8%;
+}
+.hidden{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.padding-18{
+  padding:18px;
+}
+/* footer */
+.footer-area {
+  position: relative;
+  padding: 30px 0;
+  background-color: black;
+  text-align: center;
+  font-size: 12px;
+  bottom: 0;
+}
+
+.footer-area .container .row {
+  display: flex;
+}
+
+.footer-area .footer-nav li a:hover {
+}
+
+.footer-area .footer-nav li a {
+  color: #898888;
+  font-size: 16px;
+  text-align: left;
+  padding: 0 10px;
+  text-decoration: none !important;
+}
+
+.footer-area .footer-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.footer-area .copywrite-text {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #A5A5A5;
+}
+
+.footer-area .copywrite-text a {
+  color: #A5A5A5;
+  font-size: 12px;
+}
+
+.footer-area .copywrite-text a:hover, .footer-area .copywrite-text a:focus {
+  color: #fff;
+}
+.footer-area .company-logo{
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+}
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0 !important;
+    right: 0 !important;
+}
+
+/* Hover and gradient button */
+.btn-hover {
+    width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.btn-hover.color-10 {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.btn-hover.color-11 {
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+    box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+
+
+/* :: 15.0 Breadcumb Area CSS */
+
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+
+.breadcumb-area {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 385px;
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcumb-area {
+    height: 270px;
+  }
+}
+
+.breadcumb-area .bradcumbContent {
+  position: absolute;
+  background-color: #fff;
+  width: 525px;
+  bottom: 0;
+  left: 50%;
+  z-index: 100;
+  text-align: center;
+  padding-top: 40px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcumb-area .bradcumbContent {
+    width: calc(100% - 60px);
+    padding-top: 30px;
+  }
+}
+
+.breadcumb-area .bradcumbContent p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: #5f5f5f;
+}
+
+.breadcumb-area .bradcumbContent h2 {
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcumb-area .bradcumbContent h2 {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+}
+
+.container-fluid .form-control {
+  height: auto !important;
+  border: 2px solid #ced4da !important;
+}
+
+.shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: black;
+}

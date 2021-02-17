@@ -1,0 +1,198 @@
+<style>
+
+    #bgart {
+        /*  transform: rotate(-40deg) scale(1.75); */
+        opacity: 0.9;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body {
+        background: linear-gradient(#1f2a44, #101820);
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    path {
+        fill: none;
+        stroke: url(#grady);
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        opacity: 1;
+        animation: what 60s linear infinite -30s;
+    }
+
+    path:nth-child(odd) {
+        animation-direction: reverse;
+    }
+
+    @keyframes what {
+        0% {
+            stroke-dashoffset: -1;
+        }
+        100% {
+            stroke-dashoffset: 1;
+        }
+    }
+
+    path:nth-child(2n) {
+        animation-delay: -1s;
+    }
+
+    path:nth-child(3n) {
+        animation-delay: -2s;
+    }
+
+</style>
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+    <svg xmlns="http://www.w3.org/2000/svg" id="bgart" viewBox="100 0 100 120" preserveAspectRatio="xMidYMid meet">
+
+    </svg>
+
+    <svg>
+        <defs>
+            <linearGradient cx="50%" cy="50%" id="grady">
+                <stop offset="20%" stop-color="#326295"/>
+                <stop offset="100%" stop-color="#8dafb2"/>
+            </linearGradient>
+        </defs>
+
+    </svg>
+
+{% endblock %}
+{% block javascript %}
+    <script>
+        let svg = document.getElementById("bgart");
+
+        function drawPaths() {
+            for (i = 0; i < 5; i++) {
+                path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+                function getWidth() {
+                    return Math.floor(Math.random() * 20 + 1);
+                }
+
+                function getLength() {
+                    return Math.floor(Math.random() * 0.333 + 0.85);
+                }
+
+                function getStartX() {
+                    return Math.floor(Math.random() * 250);
+                }
+
+                function getStartY() {
+                    return Math.floor(Math.random() * 150);
+                }
+
+                function getRandom1() {
+                    return Math.floor(Math.random() * 90);
+                }
+
+                function getRandom2() {
+                    return Math.floor(Math.random() * -40);
+                }
+
+                function getRandom3() {
+                    return Math.floor(Math.random() * 40);
+                }
+
+                function getRandom4() {
+                    return Math.floor(Math.random() * -40);
+                }
+
+                function getRandom5() {
+                    return Math.floor(Math.random() * 40);
+                }
+
+                function getRandom6() {
+                    return Math.floor(Math.random() * -40);
+                }
+
+                function getRandom7() {
+                    return Math.floor(Math.random() * 40);
+                }
+
+                function getRandom8() {
+                    return Math.floor(Math.random() * -40);
+                }
+
+                function getRandom9() {
+                    return Math.floor(Math.random() * 40);
+                }
+
+                function getRandom10() {
+                    return Math.floor(Math.random() * -40);
+                }
+
+                function getRandom11() {
+                    return Math.floor(Math.random() * 40);
+                }
+
+                function getRandom12() {
+                    return Math.floor(Math.random() * -40);
+                }
+
+                function getRandom13() {
+                    return Math.floor(Math.random() * 40);
+                }
+
+                function getRandom14() {
+                    return Math.floor(Math.random() * -40);
+                }
+
+                path.setAttribute("pathLength", 1);
+
+                path.setAttribute("stroke-width", `${getWidth()}`);
+                //  path.setAttribute("stroke-dasharray", `${getLength()} 1`);
+
+                path.setAttribute(
+                    "d",
+                    `m   ${getStartX()} ${getStartY()},
+a 1 1 0 0 1 ${getRandom3()}  ${getRandom4()} ,
+a 1 1 0 0 1 ${getRandom1()}  ${getRandom2()} ,
+a 1 1 0 0 1 ${getRandom5()}  ${getRandom6()} ,
+a 1 1 0 0 1 ${getRandom8()}  ${getRandom7()} ,
+a 1 1 0 0 1 ${getRandom10()} ${getRandom9()} ,
+a 1 1 0 0 1 ${getRandom4()}  ${getRandom3()} ,
+a 1 1 0 0 1 ${getRandom14()} ${getRandom1()} ,
+a 1 1 0 0 1 ${getRandom7()}  ${getRandom11()} ,
+a 1 1 0 0 1 ${getRandom12()} ${getRandom6()} ,
+a 1 1 0 0 1 ${getRandom2()}  ${getRandom1()} ,
+a 1 1 0 0 1 ${getRandom7()}  ${getRandom2()} ,
+a 1 1 0 0 1 ${getRandom3()}  ${getRandom10()} ,
+  `
+                );
+                svg.appendChild(path);
+            }
+        }
+
+        function removeAll() {
+            while (svg.firstChild) {
+                svg.removeChild(svg.lastChild);
+            }
+        }
+
+        svg.addEventListener("click", function () {
+            removeAll();
+            drawPaths();
+        });
+
+        drawPaths();
+
+    </script>
+    <script>
+        function addBlack() {
+            var element = document.getElementById("banner");
+            element.classList.add("shrink");
+        }
+        addBlack();
+    </script>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% block title %}Info{% endblock %}
+{% load static %}
+{% block extra_header_links %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bill/css/bill-info.css' %}">
+{% endblock %}
+{% block body %}
+	<section class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static 'bill/images/home_bg.png' %}")>
+        <div class="bradcumbContent">
+            <p id="invoice-year">{{ invoice.year }}</p>
+            <h2>Bill <span id="bill-no">{{ invoice.invoice_no }}</span></h2>
+        </div>
+    </section>
+
+    <div class="info-container">
+    	<div class="company">
+    		<div class="company-details">
+                <h4><strong>To:</strong></h4>
+				<div class="company-name">{{ invoice.bill_to.company_name }}</div>
+				<div class="company-adress">{{ invoice.bill_to.address }}</div>
+				<div class="company-location">{{ invoice.bill_to.location }}</div>
+				<div class="company-gstin">{{ invoice.bill_to.gstin }}</div>
+    		</div>
+            <div class="bill-details">
+                <div class="bill-date"><strong>{{ invoice.bill_date }}</strong></div>
+                <div class="bill-transporter-name"><strong>Driver name</strong> : {{ invoice.invoice_driver.vehicle_driver }}</div>
+                <div class="bill-transporter-no"><strong>Vehicle no</strong> : {{ invoice.invoice_driver.vehicle_no }}</div>
+                <div class="bill-term-days"><strong>Payment Term :</strong> {{ invoice.payment_term }}</div>
+                <div><strong>Eway :</strong> {{ invoice.eway }}</div>
+            </div>
+        </div>
+    	<div class="row">
+    		<table class="product-table">
+			    <tr>
+                    <th>Product Name</th>
+                    <th>HSN</th>
+                    <th>Packing</th>
+                    <th>Quantity</th>
+                    <th>Rate</th>
+                    <th>Total</th>
+			    </tr>
+			    {% for product in bill_products %}
+                <tr>
+                    <td>{{ product.item.product_name }}</td>
+                    <td>{{ product.item.hsn_code }}</td>
+                    <td>{{ product.packing }}</td>
+                    <td>{{ product.quantity }}</td>
+                    <td>{{ product.rate }}</td>
+                    <td>{{ product.total }}</td>
+                </tr>
+			    {% endfor %}
+                <tr class="blank_row">
+                    <td colspan="6">&nbsp;</td>
+                </tr>
+			    <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">Total</td>
+                    <td colspan="2">{{ invoice.sum_total }}</td>
+			    </tr>
+			  <tr>
+			    <td></td>
+			    <td></td>
+			    <td colspan="2">Cartiage</td>
+			    <td colspan="2">{{ invoice.cartage }}</td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td></td>
+			    <td colspan="2">Sum total</td>
+			    <td colspan="2">{{ invoice.grand_total }}</td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td rowspan="3">TAX</td>
+			    <td colspan="2">IGST</td>
+			    <td colspan="2">{{ invoice.invoice_igst }}</td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td colspan="2">CGST</td>
+			    <td colspan="2">{{ invoice.invoice_cgst }}</td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td colspan="2">SGST</td>
+			    <td colspan="2">{{ invoice.invoice_sgst }}</td>
+			  </tr>
+			  <tr>
+			    <td></td>
+			    <td></td>
+			    <td colspan="2">Grand Total</td>
+			    <td colspan="2">{{ invoice.grand_total_final }}</td>
+			  </tr>
+			</table>
+    	</div>
+	    <div class="download">
+            {% if not invoice.eway and invoice.grand_total_final > 50000 %}
+                <form enctype="multipart/form-data" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="eway">Please enter eway no: </label>
+                        <input id="eway" type="text" name="eway">
+                    </div>
+                    <div class="form-group">
+                        <div class="offset-sm-2 col-sm-10">
+                            <button class="btn-hover color-3" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            {% else %}
+                {% if invoice.invoice_url %}
+                    <a href="{{ invoice.invoice_url }}" class="btn-hover color-3 padding-18" id="view-pdf" target="_blank">View PDF</a>
+                {% else %}
+                    <a href="" class="btn-hover color-3 padding-18 hidden" id="view-pdf-without-link" target="_blank">View PDF</a>
+                {% endif %}
+                <a href="#" class="btn-hover color-3 padding-18" id="generate-files">Generate Files</a>
+                <a href="{% url 'bill:download-pdf' invoice.pk %}" class="btn-hover color-3 padding-18 hidden" id="download-pdf">Download pdf</a>
+                <a href="{% url 'bill:download' invoice.pk %}" class="btn-hover color-3 padding-18 hidden" id="download-excel">
+                    Download excel
+                </a>
+            {% endif %}
+        </div>
+    <a href="{% url 'bill:download-pdf' invoice.pk %}">
+        <div class="btn-circle-download">
+            <svg id="arrow" width="14px" height="20px" viewBox="17 14 14 20">
+                <path d="M24,15 L24,32"></path>
+                <polyline points="30 27 24 33 18 27"></polyline>
+            </svg>
+            <svg id="check" width="21px" height="15px" viewBox="13 17 21 15">
+                <polyline points="32.5 18.5 20 31 14.5 25.5"></polyline>
+            </svg>
+            <svg  id="border" width="48px" height="48px" viewBox="0 0 48 48">
+                <path d="M24,1 L24,1 L24,1 C36.7025492,1 47,11.2974508 47,24 L47,24 L47,24 C47,36.7025492 36.7025492,47 24,47 L24,47 L24,47 C11.2974508,47 1,36.7025492 1,24 L1,24 L1,24 C1,11.2974508 11.2974508,1 24,1 L24,1 Z"></path>
+            </svg>
+        </div></a>
+    </div>
+{% endblock %}
+
+{% block external_script %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    {#    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>#}
+{% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bills</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bill/css/bill_cards.css' %}">
+</head>
+<body>
+<div class="bill-header">
+    <a href="{% url 'dashboard' %}" class="dashboard-link"> << Dashboard</a>
+    <div class="main-head"> BILL SECTION</div>
+    <a href="{% url 'inventory:current' %}" class="product-stocks">Product Section >> </a>
+</div>
+
+<section class="card-section">
+{% for bill in bills %}
+    <div class="card">
+        <div id="triangle"></div>
+        <div class="card-container">
+            <h2>Invoice No. {{ bill.invoice_no }}</h2>
+        </div>
+        <div class="content">
+            <h1>{{ bill.bill_date }}</h1>
+            <h1>Rs. {{ bill.grand_total_final }}</h1>
+        </div>
+        <a class="btn-bill" href="{% url 'bill:info' bill.pk %}">More</a>
+    </div>
+{% endfor %}
+</section>
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Load the path to your static files-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {% block title %}SE{% endblock %}</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'favicon.ico' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global_style.css' %}">
+    {% block extra_header_links %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+</head>
+<body>
+{% block nav %}
+    <nav class="navbar navbar-expand-sm  navbar-dark shrink fixed-top" id="banner">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">SE</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <ul class="navbar-nav ml-auto">
+                    {% if user.username %}
+                        <li class="nav-item">
+                            <h5 class="nav-link">
+                                Hi {{ user.username }}
+                            </h5>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'dashboard' %}" class="nav-link hvr-underline-from-center"><i class="fas fa-plus"></i>Dashboard</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Bills</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{% url 'bill:create' %}">Create</a>
+                                <a class="dropdown-item" href="{% url 'bill:bill-section' %}">View</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-center" href="{% url 'bill:logout' %}">
+                                <i class="fas fa-power-off"></i>
+                                Logout
+                            </a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <h5 class="nav-link">
+                                Hi Guest
+                            </h5>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hvr-underline-from-center" href="{% url 'login' %}">
+                                <i class="fas fa-power-off"></i>
+                                Login/Signup
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+{% block body %}
+{% endblock %}
+<div class="footer-area">
+    <div class="container">
+        <div class="row d-flex flex-wrap align-items-center">
+            <div class="col-12 col-md-6">
+                <a href="{% url 'home' %}"><img src="{% static 'images/enter_logo.png' %}" alt="company-logo" class="company-logo"></a>
+                <p class="copywrite-text"> All rights reserved | This template is made with &hearts;
+                    by
+                    <a href="https://chaudharypraveen98.github.io/home/" target="_blank">BinaryBeast</a>
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="footer-nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="hvr-underline-from-center">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hvr-underline-from-center">Albums</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hvr-underline-from-center">Events</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hvr-underline-from-center">News</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'contact-us' %}" class="hvr-underline-from-center">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block external_script %}{% endblock %}
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+{% block javascript %}{% endblock %}
+</body>
+</html>

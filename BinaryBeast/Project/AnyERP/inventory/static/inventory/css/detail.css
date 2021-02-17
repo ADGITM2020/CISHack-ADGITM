@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+html {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  height: 100%;
+  padding-top: 90px;
+  background: linear-gradient(135deg, rgba(65,131,155,1) 0%,rgba(51,98,123,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#container {
+  background: #202b33;
+  border-radius: 8px;
+  padding: 2%;
+  margin: 3%;
+}
+#salesData{
+  border-bottom:rgba(255, 255, 255, .4) 2px solid;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+}
+/* Content */
+#content {
+  margin-bottom: 50px;
+}
+.chart-container {
+  padding: 1%;
+  height: auto;
+  width: 48%;
+  float: right;
+}
+.bill-link{
+  color: #ff6384 !important;
+  font-weight: 500;
+}
+.previous-button a{
+  color: #4bc0c0 !important;
+}
+.previous-button{
+  border-radius: 50%;
+  border: white 2px solid;
+  background-color: black;
+  width: 32px;
+  text-align: center;
+  font-weight: 700;
+}
+/* unvisited link */
+.bill-link a:link {
+  color: #00FF00;
+}
+
+/* visited link */
+.bill-link a:visited {
+  color: #ffcd56;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ff6384;
+}
+
+/* selected link */
+a:active {
+  color: #4bc0c0;
+}
+
+/* Table */
+.data-table{
+  float: left;
+  width: 50%;
+}
+table {
+  height: auto;
+  border-collapse: collapse;
+  width: 98%;
+  padding: 1%;
+  text-align: left;
+}
+th {
+  color: #fff;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 0 10px;
+  padding-bottom: 14px;
+}
+tr:not(:first-child):hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+td {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0 10px;
+}
+/*changing the element size*/
+@media only screen and (max-width: 900px){
+  .chart-container{
+    padding: 5%;
+    width: 90%;
+    float: none;
+  }
+  .data-table{
+    width: 100%;
+    float: none;
+  }
+}
+/* Headers */
+#titleBar{
+  text-align: center;
+  color: rgba(255, 255, 255, .8);
+  padding: 20px;
+}
+#titleBar h1 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.clearFix {
+  clear: both;
+}

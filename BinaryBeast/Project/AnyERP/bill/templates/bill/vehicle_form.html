@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vehicle register</title>
+</head>
+<body>
+	<form id="ajax" method="post">
+		{% csrf_token %}
+		<div class="form-group">
+			<input type="text" name="veh_driver" id="veh_driver" placeholder="driver">
+			<input type="text" name="veh_no" id="veh_no" placeholder="no">
+		</div>
+		<div class="form-group">
+			<div class="offset-sm-2 col-sm-10">
+				<button type="submit" class="btn btn-success" id="vehicle-btn">Submit</button>
+			</div>
+		</div>
+	</form>
+	{% load static %}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="{% static 'bill/js/../../../static/js/plugins.js' %}"></script>
+</body>
+</html>

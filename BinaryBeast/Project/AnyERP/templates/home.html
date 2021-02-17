@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_header_links %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bill/style.css' %}">
+{% endblock %}
+{% block body %}
+    <div class="banner">
+        <div class="container">
+            <div class="banner-text">
+                <div class="banner-heading">
+                    SARASWATI ENTERPRISES
+                </div>
+                <div class="banner-sub-heading">
+                    Building Relationship
+                </div>
+                <button class="btn-hover color-9">Discover <i class="fa fa-angle-double-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <section class="founder section-margin-50">
+        <div class="flex-container">
+            <div class="founder-img-container">
+                <img src="{% static 'bill/images/founder.jpg' %}" alt="">
+            </div>
+            <div class="founder-info">
+                <div class="founder-title"><h2>From the Director's Desk</h2></div>
+                <div class="founder-desc">
+                    <div class="founder-desc-para1">
+                        We aim to provide high class fabrics with full satisfaction.<br>We are capable to deliver our
+                        products and services within the promised time of delivery.<br>We also ensure that before
+                        supplying, each and every product is properly examined so that no error occurs at our clients’
+                        end.
+                    </div>
+                    <br>
+                    <ul>
+                        <lh class="founder-desc-brief"><h5>Values</h5></lh>
+                        <li>Integrity: We believe in unity.</li>
+                        <li>Customer Experience: <i>O</i>ur customer, <i>O</i>ur Pride</li>
+                        <li>Quality: Quality matters, not quantity.</li>
+                    </ul>
+                </div>
+                <div class="author-sig">
+                    <h5>Director</h5>
+                    <h5> - Abhishek Chaudhary</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h1 class="product-head">Our Exclusive Range of Products</h1>
+        <div class="product-container">
+            <figure class="image-hover">
+                <img src="{% static 'bill/images/dye.jpg' %}" alt="" height="200" width="315">
+                <figcaption>
+                    <h3>Textile Dyes</h3>
+                    <p>Dyes are water soluble. Certain dyes are attached to certain fibre types</p>
+                </figcaption>
+                <i class="ion-ios-home-outline"></i>
+                <a href="#"></a>
+            </figure>
+            <figure class="image-hover">
+                <img src="{% static 'bill/images/dayglo.jpg' %}" alt="" height="200" width="315">
+                <figcaption>
+                    <h3>Neon colours</h3>
+                    <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+                </figcaption>
+                <i class="ion-ios-home-outline"></i>
+                <a href="#"></a>
+            </figure>
+            <figure class="image-hover">
+                <img src="{% static 'bill/images/pigment.jpg' %}" alt="" height="200" width="315">
+                <figcaption>
+                    <h3>Pigment</h3>
+                    <p> The pigments are water insoluble.</p>
+                </figcaption>
+                <i class="ion-ios-home-outline"></i>
+                <a href="#"></a>
+            </figure>
+            <figure class="image-hover">
+                <img src="{% static 'bill/images/pva.jpg' %}" alt="" height="200" width="315">
+                <figcaption>
+                    <h3>Polyvinyl Alcohol</h3>
+                    <p>It is a synthetic polymer that is soluble in water</p>
+                </figcaption>
+                <i class="ion-ios-home-outline"></i>
+                <a href="#"></a>
+            </figure>
+            <figure class="image-hover">
+                <img src="{% static 'bill/images/nylon.jpg' %}" alt="" height="200" width="315">
+                <figcaption>
+                    <h3>Nylon Cloth</h3>
+                    <p>Nylon is a generic designation for a family of synthetic polymers</p>
+                </figcaption>
+                <i class="ion-ios-home-outline"></i>
+                <a href="#"></a>
+            </figure>
+            <figure class="image-hover">
+                <img src="{% static 'bill/images/nyfabric.jpg' %}" alt="" height="200" width="315">
+                <figcaption>
+                    <h3>Plain nylon cloth</h3>
+                    <p>Thermoplastic silky material that can be melt-processed into fibers, films, or
+                        shapes.</p>
+                </figcaption>
+                <i class="ion-ios-home-outline"></i>
+                <a href="#"></a>
+            </figure>
+            <figure class="image-hover">
+                <img src="{% static 'bill/images/binder.jpg' %}" alt="" height="200" width="315">
+                <figcaption>
+                    <h3>Textile Binder</h3>
+                    <p>Substance that holds or draws other materials
+                        together to form a cohesive</p>
+                </figcaption>
+                <i class="ion-ios-home-outline"></i>
+                <a href="#"></a>
+            </figure>
+            <figure class="image-hover">
+                <img src="{% static 'bill/images/nylon.jpg' %}" alt="" height="200" width="315">
+                <figcaption>
+                    <h3>Nylon Bloting Cloth</h3>
+                    <p>Bolting cloth is a mesh fabric used primarily for screen printing.</p>
+                </figcaption>
+                <i class="ion-ios-home-outline"></i>
+                <a href="#"></a>
+            </figure>
+        </div>
+    </section>
+
+    <section class="tagline">
+        <div class="tagline-container">
+            <h1>The art of sewing is a process of emotional repair.</h1>
+            <h2>- Louis Bourgeois</h2>
+        </div>
+    </section>
+
+    <section class="contact-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <p>See what’s new</p>
+                        <h2>Get In Touch</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Area -->
+            <div class="contact-form-area">
+                <form action="" enctype="multipart/form-data" method="post">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject"
+                                       placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="10"
+                                          placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-outline-dark" type="submit" value="submit">Send <i
+                                    class="fa fa-angle-double-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block external_script %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    {#    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>#}
+{% endblock %}
+{% block javascript %}
+    <script>
+    $(document).ready(function () {
+        $("#banner").removeClass("shrink");
+    });
+    //navbar breakage
+    $(document).on('scroll', function () {
+        if
+        ($(document).scrollTop() > 86) {
+            $("#banner").addClass("shrink");
+        } else {
+            $("#banner").removeClass("shrink");
+        }
+    });
+</script>
+{% endblock %}

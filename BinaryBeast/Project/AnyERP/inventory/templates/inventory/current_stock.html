@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Product List{% endblock %}
+
+{% block extra_header_links %}
+    <link rel="stylesheet" href="{% static 'inventory/style.css' %}">
+    <link rel="stylesheet" href="{% static 'inventory/css/search.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div class="product-header" style="background-image: url({% static 'images/sara9.jpg' %}); background-repeat: no-repeat;background-size: cover; background-position-y: 20%">
+        <h1>Product List</h1>
+        <div class="search">
+            <label for="search-text">Enter the Product</label>
+            <input id="search-text">
+        </div>
+        <div class="list-count"></div>
+    </div>
+
+    <div class="tbl-header">
+        <table class="product">
+            <thead class="tbl-header">
+            <tr>
+                <th>Product Name</th>
+                <th>HSN</th>
+                <th>Product Id</th>
+                <th>Rate</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <table id="product-table-body">
+            <tbody>
+            {% for product in object_list %}
+                <tr class="product-row">
+                    <td>
+                        <a class="product-title" href="{% url 'inventory:study' product.product_id %}">{{ product.product_name }}</a>
+                    </td>
+                    <td>{{ product.hsn_code }}</td>
+                    <td>{{ product.product_id }}</td>
+                    <td>{{ product.product_price }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <span class="empty-item">no results</span>
+    </div>
+{% endblock %}
+{% block external_script %}
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="{% static 'inventory/js/searchAndFilter.js' %}"></script>
+    {#    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>#}
+{% endblock %}

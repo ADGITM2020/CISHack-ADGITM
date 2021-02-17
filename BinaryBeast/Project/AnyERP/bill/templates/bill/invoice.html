@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Invoice{% endblock %}
+{% block body %}
+    <section class="breadcumb-area bg-img bg-overlay" id="contact-bg">
+        <div class="bradcumbContent">
+            <p>Invoice</p>
+            <h2>Create Invoice easily</h2>
+        </div>
+    </section>
+    <div class="invoice-detail">
+        <form enctype="multipart/form-data" method="post" class="invoice-detail-form">
+            <div class="invoice">
+                {% for field in form %}
+                    <div class="form-group">
+                        <span class="text-danger small">
+                            {{ field.errors }}
+                        </span>
+                        {{ field.label_tag }}
+                        {{ field }}
+                    </div>
+                {% endfor %}
+            </div>
+            {% csrf_token %}
+            {{ formset.management_form }}
+            <div id="product-form">
+                {% for form in formset %}
+                    <div class="form-group">
+                        {{ form.as_p }}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="form-group">
+                <input type="button" value="Add More" id="add_more">
+                <input type="button" value="Remove One" id="remove_recent">
+            </div>
+
+            <div class="form-group">
+                <div class="offset-6">
+                    <button class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="empty_form" style="display:none">
+        <div class="form-group empty-group">
+            {{ formset.empty_form }}
+        </div>
+    </div>
+
+{% endblock %}
