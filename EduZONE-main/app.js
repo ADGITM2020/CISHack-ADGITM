@@ -13,19 +13,19 @@ var express=require("express"),
 
 mongoose.connect("mongodb+srv://hackathon:hackathon@hackathon.skd4q.mongodb.net/hackathon?retryWrites=true&w=majority",{useNewUrlParser: true,useUnifiedTopology: true,useFindAndModify:false});
 
+app.use(express.static(__dirname+"/public"));
 app.use(bodyParser.urlencoded({extended:true}));
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 app.set("view engine","ejs");
 
-app.use(express.static(__dirname+"/public"));
 
 app.use(methodOverride("_method"));
 
 app.use(require("express-session")({
     secret:"this is secret content",
-    resave:false,
+    resave:true,
     saveUninitialized:false
   }));
 
@@ -113,6 +113,10 @@ app.get("/todo",isLoggedIn, function(req, res){
 
 app.post("/todo", isLoggedIn, function(req, res){
   var todoTask = new TodoTask({
+    author:{
+      id:req.user._id,
+      username:req.user.username
+    },
     content: req.body.content
   })
     todoTask.save();

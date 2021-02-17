@@ -1,5 +1,4 @@
 <%- include("header"); %>
-
 <div class="todo-container" style="text-align: center;">
     <h2>To-Do List</h2>
     <div class="todo">
@@ -9,16 +8,20 @@
     </form>
     <ul class="todo-list " >
         <% TodoTask.forEach(details => { %>
+        <%if(currentUser && details.author.id.equals(currentUser._id)){%>
+        
         <li class="todo-list-item" style="list-style-type:none; border-bottom: 3 px white;">
         <div class="todo-list-item-name"><%= details.content %></div>
         <form action="/remove/<%= details._id %>?_method=DELETE" method="POST" class="remove">
           <button class="fas fa-trash"></button>
         </form>  
         </li>
+        <%}else{}%>
         <% }) %>
         </ul>
     </div>
 </div>
 
 <%- include("footer"); %>
+
 

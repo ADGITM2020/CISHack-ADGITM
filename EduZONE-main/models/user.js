@@ -8,20 +8,12 @@ var UserSchema = new mongoose.Schema ({
     },
     password:{
         type: String,       
-    },
-    Todo:[{
-        todo:{
-            type: mongoose.Schema.Types.ObjectId,
-            ref:"Todo"
-        },
-        title:String, 
-        completed: Boolean,
-        status:Boolean
     }
-    ]
-})
+    
+});
 UserSchema.plugin(passportLocalMongoose);
 
 module.exports = mongoose.model('User', UserSchema);
+
 
 
