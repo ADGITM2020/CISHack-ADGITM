@@ -1,0 +1,32 @@
+<%- include("header"); -%> 
+<div class="todo-container">
+    <h2>To-Do List</h2>
+    <div class="todo">
+        <form action="/edit/<%= idTask %>" method="POST" class="todo-header">
+            <input type="text" name="content">
+            <button type="submit"><span class="fas fa-plus"></span></button>
+        </form>
+        <ul class="todo-list">
+            <% console.log("on edit page"); %>
+            <% console.log(Tasks); %>
+            <% if (tasks._id == idTask) { %>
+            <li class="todo-list-item">
+            <form action="/edit/<%= Tasks._id %>" method="POST">
+                <input type="text" value="<%= tasks.content %>" name="content">
+                <button type="submit">Confirm</button>
+                <a href="/todo" class="cancel">Cancel</a>
+            </form>
+                </li>
+            <% } else { %>
+            <li class="todo-list-item">
+            <div class="todo-list-item-name"><%= Tasks.content %></div>
+            <a href="/edit/<%= tasks._id %>" class="edit"> <span class="fas fa-edit"></span>
+            </a>
+            <a href="/remove/<%= tasks._id %>" class="remove"> <span class="fas fa-times"></span>
+            </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+    </div>
+<%- include("footer"); -%> 

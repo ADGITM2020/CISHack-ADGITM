@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Mp3Player</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/d8ed57f4ac.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.js" integrity="sha512-J+vDCDlH9TYo4uL0R5g9TCvJj8oGATXWi17AcOyUhuyEbJf0SF5HSmKv1gwPCEowauPanV0RAaYjyU+kbowtQg==" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.js" integrity="sha512-XHX1BtNTb2lSeCsQQQ7/MBdpG+aIOiUKGgWkNHTAa737lUtZ+vVSKkAu5/GxX2QNCW7ZgPmWQJPDuutl7+Lf7A==" crossorigin="anonymous"></script>
+      	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script type="text/paperscript" canvas="myCanvas">
+		    var width, height, center;
+		    var points = 10;
+		    var smooth = true;
+		    var path = new Path();
+		    var mousePos = view.center / 2;
+		    var pathHeight = mousePos.y;
+		    path.fillColor = 'white';
+		    initializePath();
+
+		    function initializePath() {
+		    	center = view.center;
+		    	width = view.size.width;
+		    	height = view.size.height / 2;
+		    	path.segments = [];
+		    	path.add(view.bounds.bottomLeft);
+		    	for (var i = 1; i < points; i++) {
+		    		var point = new Point(width / points * i, center.y);
+		    		path.add(point);
+		    	}
+		    	path.add(view.bounds.bottomRight);
+		    	// path.fullySelected = true;
+		    }
+
+		    function onFrame(event) {
+		    	pathHeight += (center.y - mousePos.y - pathHeight) / 10;
+		    	for (var i = 1; i < points; i++) {
+		    		var sinSeed = event.count + (i + i % 10) * 100;
+		    		var sinHeight = Math.sin(sinSeed / 200) * pathHeight;
+		    		var yPos = Math.sin(sinSeed / 100) * sinHeight + height;
+		    		path.segments[i].point.y = yPos;
+		    	}
+		    	if (smooth)
+		    		path.smooth({ type: 'continuous' });
+		    }
+
+		    function onMouseMove(event) {
+		    	mousePos = event.point;
+		    }
+
+		    function onMouseDown(event) {
+		    	smooth = !smooth;
+		    	if (!smooth) {
+		    		// If smooth has been turned off, we need to reset
+		    		// the handles of the path:
+		    		for (var i = 0, l = path.segments.length; i < l; i++) {
+		    			var segment = path.segments[i];
+		    			segment.handleIn = segment.handleOut = null;
+		    		}
+		    	}
+		    }
+
+		    // Reposition the path whenever the window is resized:
+		    function onResize(event) {
+		    	initializePath();
+		    }
+	  </script>
+		<style>
+		
+    	    html, body {
+				height: 100%;
+				margin: 0;
+				font-family: 'lato';
+				background-image: -webkit-linear-gradient(65deg, rgba(0,107,141,1) 50%, rgba(0,69,91,1) 50%);
+				font-size: 20px;
+				color: white;
+            }
+			
+    
+			
+			#playercontroller{
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				
+				color: white;
+				text-align: center;
+				padding: 20px;
+				
+			}
+			
+			.fa{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.musicitem{
+				padding: 14px;
+				border-bottom: 1px solid white;
+			}
+			
+			#musiclist{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding-top: 20px;
+				padding-bottom: 160px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				overflow: auto;
+				
+			}
+			
+			.slider {
+			  -webkit-appearance: none;
+			  width: 100%;
+			  height: 2px;
+			  border-radius: 5px;  
+			  background: white;
+			  outline: none;
+			}
+
+			.slider::-webkit-slider-thumb {
+			  -webkit-appearance: none;
+			  appearance: none;
+			  width: 15px;
+			  height: 15px;
+			  border-radius: 50%; 
+			  background: white;
+			  cursor: pointer;
+			}
+
+			.slider::-moz-range-thumb {
+			  width: 15px;
+			  height: 15px;
+			  border-radius: 50%;
+			  background: white;
+			  cursor: pointer;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div id="playercontroller">
+			<div style="display: table; width: 100%; margin-bottom: 20px;">
+				<h1 style="text-align: left;" ><a  href="/" style="color: white; text-decoration: none; font-family: Ubuntu; " >EduZONE</a></h1>
+			</div>
+			<canvas id="myCanvas" resize style="width:70%;"></canvas>
+			<input type="range" class="slider" min="1" max="100" value="0" class="slider" style="box-sizing: border-box; width: 100%" onchange="rangechanged()" id="playerrange">
+			<br>
+			<br>
+			<div style="display: table; width: 100%">
+				<div style="display: table-row;">
+					<div style="display: table-cell; vertical-align: middle; font-size: 30px;" onclick="playprevmusic()"><i class="fa fa-backward"></i></div>
+					<div style="display: table-cell; vertical-align: middle; font-size: 40px;" id="playpause" onclick="playpause()"><i class="fa fa-play"></i></div>
+					<div style="display: table-cell; vertical-align: middle; font-size: 30px;" onclick="playnextmusic()"><i class="fa fa-forward"></i></div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		<script>
+			
+			var currentaudioindex = 0
+			var audios = [
+				{ title : "music1" , file : "music1" }, 
+				{ title : "music2" , file : "music2" }, 
+				{ title : "music3" , file : "music3" }, 
+				{ title : "music4" , file : "music4" }, 
+			]
+			
+			
+			
+			function seekbarloop(){
+				if(isplaying){
+					var currentscond = sound.seek()
+					$("#playerrange").val(currentscond / sound.duration() * 100)
+					if(!isNaN(sound.seek() / 60))
+						$("#currentsecond").html((sound.seek() / 60).toFixed(2))
+					$("#currentduration").html((sound.duration() / 60).toFixed(2))
+					$("#currenttitle").html(audios[currentaudioindex].title)
+					setTimeout(function(){
+						seekbarloop()
+					}, 1000)
+				}
+			}
+		
+			
+			
+			var sound
+			
+			function playmusic(currentindex){
+
+				currentaudioindex = currentindex
+				try{
+					sound.stop()
+				}
+				catch(e){
+				}
+				sound = new Howl({
+					src: ['mp3/' + audios[currentaudioindex].file + '.mp3']
+				});
+				var nextmusic = currentaudioindex+1
+				sound.on('end', function(){
+					if(nextmusic <= audios.length)
+						$(".musicitem:eq("+nextmusic+")").click()
+					else{
+						playmusic(0);
+					}
+						
+				});
+				
+				$(".musicitem").css({ "background-color" : "inherit", "color" : "white" })
+				$(".musicitem:eq("+currentaudioindex+")").css({ "background-color" : "white", "color" : "black" })
+				
+				play()
+			}
+			
+			function playprevmusic(){
+				if(currentaudioindex > 0)
+					playmusic(currentaudioindex-1)
+			}
+			
+			function playnextmusic(){
+				if(currentaudioindex < audios.length)
+					playmusic(currentaudioindex+1)
+			}
+			
+			function setmusicbynum(num){
+				try{
+					sound.stop()
+				}
+				catch(e){
+				}
+				sound = new Howl({
+					src: ['mp3/' + audios[num].file + '.mp3']
+				});
+			}
+			
+			setmusicbynum(0)
+			
+			var isplaying = false
+			
+			function play(){
+				isplaying = true
+				sound.play()
+				$("#playpause").html('<i class="fa fa-pause"></i>')
+				seekbarloop()
+			}
+			
+			function pause(){
+				isplaying = false
+				sound.pause()
+				$("#playpause").html('<i class="fa fa-play"></i>')
+			}
+			
+			function stop(){
+				sound.stop()
+				isplaying = false
+				$("#playpause").html('<i class="fa fa-play"></i>')
+			}
+			
+			function playpause(){
+				$(".musicitem").css({ "background-color" : "inherit", "color" : "white" })
+				$(".musicitem:eq("+currentaudioindex+")").css({ "background-color" : "white", "color" : "black" })
+				if(isplaying)
+					pause()
+				else
+					play()
+			}
+			
+			
+			$('.musicitem').click(function() {
+				//
+			});
+			
+			function rangechanged(){
+				var seekvalue = $("#playerrange").val()
+				var wantedsecond = sound.duration() * (seekvalue/100)
+				sound.seek(wantedsecond)
+			}
+			
+			
+		</script>
+
+</body>
+
+</html>

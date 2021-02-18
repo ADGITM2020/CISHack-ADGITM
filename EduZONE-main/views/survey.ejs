@@ -1,0 +1,39 @@
+<%- include("header"); -%> 
+    <div class="container">
+        <form action="/survey" method="POST">
+          <input type="text" style="display: none;"   value="<%=currentUser.username%>" name="username">
+            <h2>Feedback Form</h2>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <!-- <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div> -->
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Are you satisfied with the service we provided you. </label>
+              <br>
+              <input type="radio" name="yes" onclick="Unshow()"><label>Yes</label>
+              <br>
+              <input type="radio" name="yes" onclick="show()"><label>No</label>     
+            </div>
+            <div id="hidden" style="display: none; height: 40px; width: auto; resize: none;">
+                <textarea name="surveyproblem" id="surveyproblemcontent" placeholder="please feed in you discrepancy" rows="4" cols="50"></textarea>
+            </div>
+
+            <br><br><br><br>
+            <button type="submit" class="btn btn-outline-light"> Submit </button>
+          </form>
+    </div>
+    <script>
+        function show() {
+            var popup = document.getElementById("hidden").style.display = "block";
+        }
+        function Unshow(){
+            var HidePopup = document.getElementById("hidden").style.display = "none";
+            var contentInBox=document.getElementById("surveyproblemcontent").value="";
+        }
+    </script>
+<%- include("footer"); -%> 

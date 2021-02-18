@@ -1,0 +1,24 @@
+<%- include("navbar"); -%> 
+        <div class="container">
+            <div class="container margin:top">
+            <span> </span>
+            <h2 style="text-align: center;">Login Page</h2>
+            <div class="row justify-content-center align-items-center">
+                <div style="width: 50%; margin: 20px auto; row-gap: h-100;">
+                <form class="" action="/login" method="post">
+                    <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="username">
+                    </div>
+                    <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                    <button class="btn btn-large btn-outline-light" type="submit" style="padding-right: 2px;"> Log In! </button>
+                    <button href="/" class="btn btn-large btn-outline-light"> Sign Up! </button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+<%- include("footer"); -%>

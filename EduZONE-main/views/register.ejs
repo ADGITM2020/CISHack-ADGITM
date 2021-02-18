@@ -1,0 +1,24 @@
+<%- include("navbar"); -%> 
+    <div class="container">
+        <div class="container margin:top">
+          <span> </span>
+          <h2 style="text-align: center;">Registration Page</h2>
+          <div class="row justify-content-center align-items-center">
+            <div  style="width: 50%; margin: 20px auto; row-gap: h-100;">
+              <form class="" action="/register" method="post">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="username" placeholder="email id" required >
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="password" name="password" placeholder="password" required>
+                </div>
+                <div class="form-group d-grid gap-2 d-md-block">
+                  <button class="btn btn-lg btn-outline-light" type="submit">Register Now!</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<%- include("footer"); -%>
+
